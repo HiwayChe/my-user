@@ -6,8 +6,9 @@
 	
 	<body>
 		<form action="/user/dologin" method="post">
-			<label>用户名</label><input type="text" name="id"/>
+			<label>用户名</label><input type="text" name="name"/>
 			<label>密码</label><input type="password" name="password"/>
+			<input type="text" name="test" value="${RequestParameters['name']!'会好'}"/>
 			<input type="submit" value="登录"/>
 		</form>
 	</body>
